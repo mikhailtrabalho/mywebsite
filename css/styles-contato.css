@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(4deg, #3debb0 1%, #8956f3 99%);
+    background-attachment: fixed;
+}
+
+.principal {
+    height: 100vh;
+    padding-top: 30px;
+    font-size: 1em;
+}
+
+.conteiner_contato {
+    width: 90%;
+    margin: auto;
+}
+
+.conteiner_contato legend {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #cfcccc;
+}
+
+.conteiner_contato li {
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+}
+
+
+.conteiner_contato li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.conteiner_contato li a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+
+
+.conteiner_contato li a img {
+    width: 3em;
+    display: block;
+    margin: auto;
+}

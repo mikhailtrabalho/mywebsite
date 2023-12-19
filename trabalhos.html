@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .titulo-trabalho {
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 3em;
+        text-shadow: 1px 2px 3px black;
+        background-color: rgba(1, 0, 0, 0.3);
+    }
+
+    body {
+        background: linear-gradient(4deg, #3debb0 1%, #8956f3 99%);
+        background-attachment: fixed;
+    }
+
+    div {
+
+        box-shadow: 0px 5px 15px black;
+        border-radius: 10px;
+    }
+
+
+    div a {
+        width: 100%;
+
+    }
+
+    .div1 {
+        background-image: url(img/site-teste.png);
+        width: 50%;
+        height: 300px;
+        margin: 40px auto;
+        background-size: cover;
+    }
+
+
+    .div2 {
+        background-image: url(img/sistemadefiltro.png);
+        width: 50%;
+        height: 300px;
+        margin: 40px auto;
+        background-size: cover;
+    }
+
+    .div3 {
+        background-image: url(img/site-fashion-1.png);
+        width: 50%;
+        height: 300px;
+        margin: 40px auto;
+        background-size: cover;
+    }
+
+    .div4 {
+        background-image: url(img/site-responsivo.png);
+        width: 50%;
+        height: 300px;
+        margin: 40px auto;
+        background-size: cover;
+    }
+
+    .div5 {
+        background-image: url(img/sistema\ de\ venda.png);
+        width: 50%;
+        height: 300px;
+        margin: 40px auto;
+        background-size: cover;
+    }
+
+
+    .div6 {
+        background-image: url(img/site\ toin\ toi.jpg);
+        width: 50%;
+        height: 300px;
+        margin: 40px auto;
+        background-size: cover;
+    }
+
+    ::-webkit-scrollbar {
+        width: 30px;
+        background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-image: url("img/text2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 2.1em;
+    }
+    @media screen and (max-width: 500px){
+        .div1, .div2, .div3, .div4, .div5, .div6{
+            width: 90%;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <h1 class="titulo-trabalho">Trabalhos</h1>
+        <section>
+            <a href="pasta com sites/projeto-estrada/index.html">
+                <div class="div1"></div>
+            </a>
+            <a href="pasta com sites/dsmeta-css/index.html">
+                <div class="div2"></div>
+            </a>
+            <a href="pasta com sites/projeto-fashio/index.html">
+                <div class="div3"></div>
+            </a>
+            <a href="pasta com sites/projeto_responsivo/index.html">
+                <div class="div4"></div>
+            </a>
+            <a href="#">
+                <div class="div5"></div>
+            </a>
+            <a href="#">
+                <div class="div6"></div>
+            </a>
+        </section>
+    
+    </main>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1000,
+            delay: 80,
+        });
+        ScrollReveal().reveal('.div1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.div2', { delay: 500, origin: 'right', interval: 200 });
+        ScrollReveal().reveal('.div3', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.div4', { delay: 500, origin: 'right', interval: 200 });
+        ScrollReveal().reveal('.div5', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.div6', { delay: 500, origin: 'right', interval: 200 });
+    </script>
+</body>
+
+</html>

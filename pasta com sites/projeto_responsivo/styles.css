@@ -1,0 +1,204 @@
+@charset "UTF-8";
+html {
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oxygen";
+}
+.maxwidth{
+  max-width: 80em;
+  margin: auto;
+}
+.top-header {
+  text-align: center;
+}
+.top-header-logo {
+  margin: 0.5em;
+}
+
+.top-nav {
+  background-image: url(./images/bg_topo_1198x670.jpg);
+}
+.top-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5em;
+  display: block;
+}
+
+.top-nav a:hover {
+  background-color: rgba(173, 143, 171, 0.5);
+  transition-duration: 0.5s;
+}
+
+.top-content {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 1em;
+}
+.icon-play{
+  margin: auto;
+  width: 5em;
+  display: none;
+}
+.icon-play img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.top-content-title {
+  font-size: 1.375em;
+  color: color #652e78;
+  margin: 1.375em;
+}
+.top-content-subtitle {
+  font-size: 1em;
+  color: rgb(151, 105, 194);
+}
+.button {
+  text-decoration: none;
+  background-color: rgb(75, 216, 226);
+  color: white;
+  font-size: 0.9em;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: rgb(167, 180, 184);
+}
+.middle-content {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 2em;
+}
+.middle-content span[class^="icon"] {
+  font-size: 4em;
+  color: #652e78;
+}
+.middle-content-title {
+  font-size: 1.25em;
+  color: #652e78;
+  text-transform: uppercase;
+}
+.middle-content p {
+  line-height: 1.5;
+  color: #222;
+}
+.main-content {
+  padding: 2em;
+}
+.main-content-article {
+  margin-bottom: 3.5em;
+}
+.main-content-title {
+  letter-spacing: 0.2em;
+  font-size: 1.25em;
+  color: #652e78;
+  text-transform: uppercase;
+}
+.main-content p {
+  line-height: 1.2;
+}
+.footer {
+  text-align: center;
+  background-color: #25303e;
+  color: #83969f;
+  padding: 0 0 2em;
+}
+.footer-menushare {
+  background-color: #303d4c;
+  padding: 0.5em;
+}
+.footer-menushare li {
+  display: inline-block;
+  margin: 0 1em;
+}
+.footer-menushare a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+@media screen and (min-width: 48.75em) {
+  .top-header-logo {
+    float: left;
+  }
+  .top-nav {
+    float: right;
+    background: transparent;
+    margin-top: 1em;
+  }
+
+  .top-nav li {
+    display: inline-block;
+  }
+  .top-nav a {
+    color: #713a84;
+  }
+  .top-nav a:hover {
+    background-color: #e7d9fc;
+  }
+  .clearfix::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .top-content {
+    background-image: url(./images/bg_topo_1198x670.jpg);
+    color: white;
+  }
+  .icon-play{
+    display: block;
+  }
+  .top-content-subtitle {
+    color: white;
+    font-size: 0.9em;
+  }
+  .col-1_4 {
+    float: left;
+    width: 44%;
+    margin: 3%;
+  }
+  .main-content .button {
+    float: right;
+  }
+}
+@media screen and (min-width: 62.5em) {
+ 
+  .top-content{ 
+    background-position: center bottom ;
+    height: 15em;
+    padding-top: 10em;
+  }
+}
+@media screen and (min-width : 74em) {
+  .top-content{
+    background-image: url(./images/bg_topo_1600x1374.jpg);
+    padding: 19em 20em 10em;
+    background-position: center  top;
+  }
+  .icon-play{
+    width: 9em;
+  }
+  .col-1_4{
+    width:23%;
+    margin: 1%;
+  }
+  .col-1d_2{
+    float:left;
+    width: 48%;
+    margin: 1%;
+  }
+  .main-content-article .button{
+    float: none;
+  }
+}
